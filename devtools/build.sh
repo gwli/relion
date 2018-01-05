@@ -1,3 +1,5 @@
+TOP=`pwd`/..
+cd $TOP
 git pull
 #git checkout 9a8dfbae0d78e7ece3847a053e10ffccd7ab18d8
 mkdir build
