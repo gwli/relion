@@ -6,7 +6,7 @@ rm build
 mkdir build
 cd build
 # disable gui if build in docker
-cmake .. -DGUI=OFF -DCUDA=ON -DCUDA_ARCH=60 \
+cmake .. -DGUI=OFF -DCUDA=ON -DCUDA_ARCH=52 \
 -DGUI=OFF -DCMAKE_EXE_LINKER_FLAGS=-L$(dirname $(which nvcc))/../lib64 \
 -DCMAKE_SHARED_LINKER_FLAGS=-L$(dirname $(which nvcc))/../lib64
 make -j
